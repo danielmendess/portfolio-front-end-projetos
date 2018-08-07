@@ -9,13 +9,18 @@ html, body {
     height: 100%;
 }
 
+.clear {
+    clear: both;
+}
+
 @font-face {
     src: url('../fonts/OpenSans-Light.ttf');
     font-family: 'Open Sans';
 }
 
 .center {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -23,14 +28,18 @@ html, body {
     width: 100%;
     height: 90px;
     background-color: #212343;
+    padding: 0 2%;  
 }
 
 .header img {
     margin: 15px;
+    margin-top: 20px;
+    width: 250px;
 }
 
 .container-banner {
-    widows: 100%;
+    padding: 0 2%;
+    width: 100%;
     height: 557px;
     background-image: url('../images/header_bg.png');
     background-size: cover;
@@ -103,10 +112,10 @@ html, body {
 
 .container-list {
     float: left;
-    width: 620px;
+    width: 520px;
     height: 270px;
     background-color: rgb(33,35,67,.7);
-    margin-top: 40px;
+    margin-top: 100px;
     padding: 30px;
 }
 
@@ -120,7 +129,7 @@ html, body {
 }
 
 .container-info {
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color:#DDD;
     text-align: center;
 }
@@ -130,7 +139,8 @@ html, body {
 }
 
 .container-info p {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     display: inline-block;
     text-align: justify;
     margin: 15px 0;
@@ -146,6 +156,112 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.container-jobs {
+    padding: 90px 2%;
+}
+
+.container-jobs h2 {
+    text-align: center;
+    color: #462663;
+}
+
+.container-jobs-box {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-jobs-single {
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.container-jobs-single p {
+    padding: 10px 25px;
+    text-align: justify;
+}
+
+.footer {
+    border-top: 2px solid #888;
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+}
+
+.footer p {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-banner {
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    .form {
+        top: 0;
+        float: right;
+        width: 60%;
+        height: 100%;
+        max-width: 400px;
+    }
+
+    .container-list {
+        padding: 30px 0;
+        float: left;
+        width: 40%;
+        max-width: 500px;
+        height: auto;
+        display: inline-block;
+    }
+
+    .input-container input[type=text] {
+        width: 100%;
+    }
+
+    .form input[type=submit] {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .container-jobs-single {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container-list {
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form {
+        float: none;
+        display: inline-block;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .container-info p {
+        padding: 0 3%;
+    }
+
+    .container-jobs-single {
+        float: none;
+        width: 100%;
+        max-width: 600px;
+        display: inline-block;
+    }
+}
+
+
+
 
 
 

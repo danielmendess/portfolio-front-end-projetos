@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    background-color: #D6D6D6;
+    padding: 20px 3% 30px 3%;
+}
+
+.logo1 {
+    float: left;
+    width: 160px;
+}
+
+.logo2 {
+    float: right;
+    width: 160px;
+}
+
+.logo1 img {
+    width: 100%;
+}
+
+.logo2 img {
+    width: 100%;
+}
+
+.cover-form {
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg {
+    background-image: url('../images/bg-form.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.form-container {
+    float: right;
+    width: 400px;
+    height: 110%;
+    background-color: #fff;  
+    margin-right: 40px;
+    position: relative;
+    top: -5%;
+    background-color: red;
+}
+
+.form-container h2 {
+    padding: 30px 15px;
+    color: #000;
+    background-color: rgb(234, 236, 239);
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 510px) {
+    .logo1, .logo2 {
+        float: none;
+        margin: 15px auto;
+    }
+}

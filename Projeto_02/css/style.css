@@ -52,7 +52,7 @@ html, body {
 
 .form {
     width: 400px;
-    padding: 10px;
+    padding: 15px;
     height: calc(100% + 30px);
     background-color: #fff;
     float: right;
@@ -88,6 +88,11 @@ html, body {
     height: 55px;
     border: 1px solid #ccc;
     margin-top: 8px;
+    padding: 8px 10px;  
+}
+
+.input-container input[type=text]:focus {
+    outline: 0;
 }
 
 .form input[type=submit] {

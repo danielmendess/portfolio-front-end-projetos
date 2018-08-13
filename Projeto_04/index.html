@@ -15,6 +15,9 @@
 </head>
 
 <body>
+
+    <!-- Objetivo: Concluir o site usando o máximo de recursos possíveis do bootstrap, apenas para estudo. -->
+
     <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top py-3 box-shadow">
         <a href="index.html" class="navbar-brand">
             <img src="images/caravan.svg" alt="Caravan">
@@ -89,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-5 p-4">
+            <div class="col-lg-5 p-4 align-self-center">
                 <h1 class="display-4">Realize a viagem do seu sonho</h1>
                 <p class="lead">O melhor lugar é com a Caravan, mais de 5.000 escursões concluídas.</p>
                 <form action="">
@@ -103,6 +106,197 @@
             </div>
         </div>
     </div>
+
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <div class="my-5">
+                <span class="h6 d-block">TUDO DE MELHOR PARA VOCÊ</span>
+                <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="d-flex justify-content-center icone">
+                        <img src="images/icones/passaporte.svg" alt="Passaporte">
+                    </div>
+                    <h3>Documentos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nemo Nulla.</p>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="d-flex justify-content-center icone">
+                        <img src="images/icones/passagens.svg" alt="Passagens">
+                    </div>
+                    <h3>Passagens</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nemo Nulla.</p>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="d-flex justify-content-center icone">
+                        <img src="images/icones/translado.svg" alt="Translado">
+                    </div>
+                    <h3>Translado</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nemo Nulla.</p>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="d-flex justify-content-center icone">
+                        <img src="images/icones/praias.svg" alt="Praias">
+                    </div>
+                    <h3>Praias</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nemo Nulla.</p>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="d-flex justify-content-center icone">
+                        <img src="images/icones/bagagens.svg" alt="Bagagens">
+                    </div>
+                    <h3>Bagagens</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nemo Nulla.</p>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="d-flex justify-content-center icone">
+                        <img src="images/icones/turismo.svg" alt="Turismo">
+                    </div>
+                    <h3>Turismo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nemo Nulla.</p>
+                </div>
+            </div>
+
+            <a href="planos.html" class="btn btn-primary btn-lg mt-4">Comprar Plano</a>
+        </div>
+    </section>
+
+    <section id="home-quote">
+        <div class="container">
+            <div class="row">
+                <blockquote class="blockquote text-center text-white p-5">
+                    <p class="display-4">
+                        <em>"A felicidade não está na estrada que leva algum lugar. A felicidade é a própria estrada."</em>
+                    </p>
+                    <footer class="blockquote-footer text-white">Bob Dylan</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="mt-5 mb-2 text-center">
+            <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+            <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 py-4  " id="perguntasFrequentes" data-children=".pergunta">
+                <div id="accordion">
+                    <div id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                -> É possivel cancelar a viagem?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quasi asperiores facilis, laudantium voluptatem, officia maxime ut reprehenderit saepe blanditiis neque porro voluptas quae animi ab est, vero sed sapiente.
+                        </div>
+                    </div>
+
+                    <div id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    → Qual a garantia que tenho se perder o voo?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sed maiores officiis ipsa? Vero inventore quam quisquam deleniti quod pariatur laborum, ad itaque facilis unde, quis mollitia cumque ullam omnis.
+                        </div>
+                    </div>
+
+                    <div id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    → Qual a principal forma de viagem?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ipsum assumenda maxime vero nemo! Autem reiciendis optio voluptatibus praesentium iure quisquam officia, natus sit totam, maiores ducimus vel corporis modi.
+                        </div>
+                    </div>
+
+                    <div id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    → Qual o melhor destino de viagem?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ipsum assumenda maxime vero nemo! Autem reiciendis optio voluptatibus praesentium iure quisquam officia, natus sit totam, maiores ducimus vel corporis modi.
+                        </div>
+                    </div>
+
+                    <div id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    → Vocês dão desconto para grupos grandes?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ipsum assumenda maxime vero nemo! Autem reiciendis optio voluptatibus praesentium iure quisquam officia, natus sit totam, maiores ducimus vel corporis modi.
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="inscricao.html">Inscreva-se</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LOCAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="local.html">California</a></li>
+                        <li><a href="local.html">Dublin</a></li>
+                        <li><a href="local.html">Paris</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>caravan@caravan.com.br</li>
+                        <li>61 99999-9999</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="btn btn-outline-secondary mb-2 btn-block footer-button btn-sm">Facebook</a></li>
+                        <li><a href="#" class="btn btn-outline-secondary mb-2 btn-block footer-button btn-sm">Twitter</a></li>
+                        <li><a href="#" class="btn btn-outline-secondary mb-2 btn-block footer-button btn-sm">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">Caravan &copy; 2018. Alguns direitos reservados.</p>
+        </div>
+    </footer>
 
     
 

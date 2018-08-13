@@ -6,3 +6,34 @@ body {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
     0 4px 8px rgba(0, 0, 0, .05);
 }
+
+.icone {
+    height: 100px;
+}
+
+#home-quote {
+    background: url('../images/bg-quote.jpg') center center;
+    background-size: cover;
+}
+
+.footer-button {
+    max-width: 140px;
+}
+
+.collapse-border {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+@media (max-width: 767px) {
+        #home-quote .display-4 {
+            font-size: 2.5rem;
+        }
+
+        body {
+            padding-top: 0;
+        }
+
+        .fixed-top {
+            position: relative;
+        }
+}

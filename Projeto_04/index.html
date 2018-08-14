@@ -18,6 +18,40 @@
 
     <!-- Objetivo: Concluir o site usando o máximo de recursos possíveis do bootstrap, apenas para estudo. -->
 
+    <!-- <Modal> -->
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginTitulo">Entre na sua conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" class="form-control" id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginSenha">Senha</label>
+                            <input type="password" class="form-control" id="loginSenha">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+                        <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui.</a></small>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- </Modal> -->
+
+    
+
     <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top py-3 box-shadow">
         <a href="index.html" class="navbar-brand">
             <img src="images/caravan.svg" alt="Caravan">
@@ -43,7 +77,7 @@
                     <a href="contato.html" class="nav-link">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
                 </li>
                 <li class="nav-item">
                     <a href="inscricao.html" class="btn btn-outline-primary ml-md-2">Inscreva-se</a>
@@ -197,6 +231,8 @@
                         </div>
                     </div>
 
+                    <div class="dropdown-divider"></div>
+
                     <div id="headingTwo">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -209,6 +245,8 @@
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sed maiores officiis ipsa? Vero inventore quam quisquam deleniti quod pariatur laborum, ad itaque facilis unde, quis mollitia cumque ullam omnis.
                         </div>
                     </div>
+
+                    <div class="dropdown-divider"></div>
 
                     <div id="headingThree">
                         <h5 class="mb-0">
@@ -223,6 +261,8 @@
                         </div>
                     </div>
 
+                    <div class="dropdown-divider"></div>
+
                     <div id="headingFour">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -235,6 +275,8 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ipsum assumenda maxime vero nemo! Autem reiciendis optio voluptatibus praesentium iure quisquam officia, natus sit totam, maiores ducimus vel corporis modi.
                         </div>
                     </div>
+
+                    <div class="dropdown-divider"></div>
 
                     <div id="headingFive">
                         <h5 class="mb-0">
@@ -249,10 +291,15 @@
                         </div>
                     </div>
 
-                    
+                    <div class="dropdown-divider"></div>
 
                 </div>
             </div>
+        </div>
+
+        <div class="text-center my-4">
+            <p class="small">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+            <a href="contato.html" class="btn btn-primary btn-lg">Entre em Contato</a>
         </div>
     </section>
 

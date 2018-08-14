@@ -20,10 +20,6 @@ body {
     max-width: 140px;
 }
 
-.collapse-border {
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
-}
-
 @media (max-width: 767px) {
         #home-quote .display-4 {
             font-size: 2.5rem;

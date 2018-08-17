@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-Light.ttf');
+    font-family: 'Open Sans';
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/capa.png');
+    max-height: 600px;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 2%;
+
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    float: left;
+    padding: 5px 20px;
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo {
+    width: 160px;
+    height: 40px;
+    float: left;
+}
+
+header .logo img {
+    width: 160px;
+    height: 40px;
+}
+
+.chamada1 {
+    float: right;
+    margin: 150px;
+    max-width: 700px;
+}
+
+.chamada1 h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.chamada1 p {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* SESSÃO CELULAR */
+
+.section-phone {
+    width: 100%;
+    background-color: #472562;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 400px;
+}
+
+.section-phone .container {
+    max-width: 1000px;
+}
+
+.section-phone-texto {
+    float: left;
+    color: #fff;
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 80px;
+}
+
+.section-phone-texto p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.section-phone-texto h2 {
+    font-size: 25px;
+}
+
+.section-phone-texto ul {
+    list-style-position: inside;
+    font-size: 15px;
+}
+
+.section-phone-texto ul li {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.section-phone-device {
+    float: left;
+    width: 50%;
+    background-image: url('../images/device.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+    top: -50px;
+
+}
+
+.btn-phone {
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 44px; 
+    border-radius: 30px;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-phone {
+        height: auto;
+        padding: 40px 2%;
+    }
+
+    .section-phone-texto {
+        float: none;
+        margin-top: 0;
+        position: static;
+        width: 100%;
+        padding-left: 2%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .section-phone-texto ul {
+        display: inline-block;
+    }
+
+    .section-phone-texto ul li {
+        float: none;
+        text-align: left;
+    }
+
+    .section-phone-device {
+        display: none;
+    }
+
+    .btn-phone {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

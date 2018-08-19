@@ -45,18 +45,22 @@ header nav {
     float: right;
 }
 
-header nav ul {
+header nav.desktop-menu ul {
     list-style-type: none;
 }
 
-header nav li {
+header nav.desktop-menu li {
     float: left;
     padding: 5px 20px;
 }
 
-header li a {
+header nav.desktop-menu li a {
     color: #fff;
     text-decoration: none;
+}
+
+header nav.mobile-menu {
+    display: none;
 }
 
 header .logo {
@@ -156,6 +160,19 @@ header .logo img {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 90vh;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    header nav.mobile-menu {
+        display: block;
+    }
+
     .section-phone {
         height: auto;
         padding: 40px 2%;
@@ -166,9 +183,9 @@ header .logo img {
         margin-top: 0;
         position: static;
         width: 100%;
-        padding-left: 2%;
         display: inline-block;
         text-align: center;
+        padding-left: 0;
     }
 
     .section-phone-texto ul {
@@ -187,5 +204,13 @@ header .logo img {
     .btn-phone {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .chamada1 {
+        float: none;
+        max-width: none;
+        margin: 130px 0;
+        width: 100%;
+        text-align: center;
     }
 }

@@ -61,6 +61,36 @@ header nav.desktop-menu li a {
 
 header nav.mobile-menu {
     display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/menu.png');
+    background-size: 100% 100%;
+}
+
+header nav.mobile-menu ul {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+header nav.mobile-menu ul li {
+    border-bottom: 1px solid #000;
+    padding: 8px 0;
+    transition: .4s;
+}
+
+header nav.mobile-menu ul li:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+header nav.mobile-menu ul li a {
+    text-decoration: none;
+    color: #000;
 }
 
 header .logo {
@@ -143,7 +173,6 @@ header .logo img {
     height: 450px;
     position: relative;
     top: -50px;
-
 }
 
 .btn-phone {
@@ -158,6 +187,11 @@ header .logo img {
     font-size: 13px;
     margin-top: 30px;
 }
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     header {

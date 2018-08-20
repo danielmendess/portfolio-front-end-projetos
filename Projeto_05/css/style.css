@@ -188,10 +188,138 @@ header .logo img {
     margin-top: 30px;
 }
 
+.sessao2 {
+    padding-top: 80px 2%;
+    background-color: #fff;
+    text-align: center;
+}
 
+.sessao2 h2 {
+    color: #472663;
+    font-weight: 500;
+}
 
+.sessao2 p {
+    margin-top: 30px;
+    max-width: 800px;
+    display: inline-block;
+    color: #472663;
+    
+}
 
+.sessao2 .container {
+    max-width: 1000px;
+}
 
+.sessao2 img {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    top: 70px;
+}
+
+.double-section {
+    width: 100%;
+}
+
+.double-section-left {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #835FA7;
+    color: #fff;
+}
+
+.double-section-left h2 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.double-section-left p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.double-section-right {
+    float: right;
+    width: 50%;
+    padding: 140px 0 90px 0;
+}
+
+.wraper-left {
+    max-width: 600px;
+    float: right;
+    padding-right: 30px;
+}
+
+.sobre-autor {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.titulo-autor {
+    float: left;
+    width: 100%;
+}
+
+.titulo-autor h2 {
+    padding-right: 20px;
+    color: #232323;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.titulo-autor p {
+    font-size: 15px;
+    color: #232323;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.titulo-autor .img-autor {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.titulo-autor img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.wraper-titulo-autor {
+    float: left;
+}
+
+.texto-autor {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.texto-autor p {
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider-bullets {
+    float: left;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.slider-bullets p {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(200, 200, 200);
+    margin-right: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
     header {
@@ -246,5 +374,9 @@ header .logo img {
         margin: 130px 0;
         width: 100%;
         text-align: center;
+    }
+
+    .sessao2 {
+        padding: 40px 2%;
     }
 }

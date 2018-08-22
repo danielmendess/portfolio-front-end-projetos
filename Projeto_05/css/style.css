@@ -212,7 +212,7 @@ header .logo img {
 }
 
 .sessao2 img {
-    width: 100%;
+    width: 80%;
     margin-top: 10px;
     position: relative;
     top: 70px;
@@ -433,6 +433,14 @@ footer p:nth-of-type(2) {
     float: right;
 }
 
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 
 
 
@@ -548,8 +556,9 @@ footer p:nth-of-type(2) {
     }
 
     .sessao2 img {
-        top: 55px;
+        top: 15px;
         margin-top: 20px;
+        width: 90%;
     }
 
     footer {

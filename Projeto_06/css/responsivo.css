@@ -59,6 +59,10 @@
 		margin: 5px;
 	}
 
+	.header_menu ul li a.menu_ativo {
+		border-color: #fff;
+	}
+
 	/* Introdução */
 
 	.introducao {
@@ -70,6 +74,12 @@
 
 	.introducao h1 {
 		font-size: 36px;
+	}
+
+	/* Introdução Interna */
+
+	.introducao-interna {
+		margin-top: 0;
 	}
 
 	/* Call */
@@ -84,7 +94,17 @@
 		display: none;
 	}
 
+	/* Sobre */
 
+	.missao_sobre p {
+		padding-right: 0;
+		font-size: 14px;
+		line-height: 20px;	
+	}
+
+	.missao_sobre ul li {
+		font-size: 14px;
+	}
 
 
 }

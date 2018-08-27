@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Montserrat',
+    sans-serif;
 }
 
 .clear {
@@ -86,9 +88,79 @@ header ul li a {
 .img-mosaico-single {
     width: 100%;
     padding-top: 100%;
-    background: #ccc;
     border: 5px solid #fff;
 }
+
+.mosaico-single1 {
+    background-image: url('../images/galeria/galeria1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mosaico-single2 {
+    background-image: url('../images/galeria/galeria2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mosaico-single3 {
+    background-image: url('../images/galeria/galeria3.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mosaico-single4 {
+    background-image: url('../images/galeria/galeria4.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mosaico-single5 {
+    background-image: url('../images/galeria/galeria5.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mosaico-single6 {
+    background-image: url('../images/galeria/galeria6.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mosaico-single7 {
+    background-image: url('../images/galeria/galeria7.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mosaico-single8 {
+    background-image: url('../images/galeria/galeria8.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.mosaico-single9 {
+    background-image: url('../images/galeria/galeria9.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.mosaico-single10 {
+    background-image: url('../images/galeria/galeria10.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.mosaico-single11 {
+    background-image: url('../images/galeria/galeria11.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+.mosaico-single12 {
+    background-image: url('../images/galeria/galeria12.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
 
 /* Serviços */
 
@@ -179,11 +251,12 @@ section.perfil .texto-perfil h2 {
     color: #698293;
     text-transform: uppercase;
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 section.perfil .texto-perfil p {
-    color: #4b4b4b;
+    color: #b4b4b4;
     font-size: 14px;
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
 /* Videos */

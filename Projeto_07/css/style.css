@@ -267,9 +267,19 @@ section.videos {
 
 section.videos .box-video {
     float: left;
+    position: relative;
+    border: 5px solid #fff;
     width: 33.3%;
     padding-top: calc(33.3% * 0.6);
 
+}
+
+section.videos iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -304,9 +314,8 @@ section.videos .box-video {
         display: none;
     }
 
-    
-
     /* Serviços */
+
     section.servicos > .container {
         flex-direction: column;
     }
@@ -352,12 +361,32 @@ section.videos .box-video {
     section.perfil .texto-perfil p {
         text-align: justify;
     }
+
+    /* Videos */
+
+    section.videos {
+        text-align: center;
+    }
+
+    section.videos .box-video {
+        width: 70%;
+        padding-top: calc(70% * 0.6);
+        display: inline-block;
+        float: none;
+    }
 }
 
 @media screen and (max-width: 580px) {
     section.perfil .img-perfil {
         width: 80%;
         padding-top: 110%;
+    }
+
+    /* Videos */
+
+    section.videos .box-video {
+        width: 90%;
+        padding-top: calc(100% * 0.6);
     }
 }
 

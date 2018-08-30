@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Oswald',
+    sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ativo {
+    color: #EB2D2D!important;
+}
+
+.linha1 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    top: 15px;
+}
+
+.subtitulo-box {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.subtitulo-box h2 {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* Header */
+
+header {
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav.desktop {
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+header nav.desktop ul {
+    list-style-type: none;
+}
+
+header nav.desktop ul li {
+    float: left;
+    font-size: 18px;
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header nav.desktop ul li a {
+    color: #000;
+    text-decoration: none;;
+}
+
+nav.mobile {
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url('../images/icon_menu.png');
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+nav.mobile ul {
+    width: 100%;
+    position: absolute;
+    background-color: #fff; 
+    text-align: center;
+    left: 0;
+    top: 110px;
+    z-index: 10;
+    display: none;
+}
+
+nav.mobile li {
+    font-size: 18px;
+    padding: 20px 0;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+nav.mobile ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Banner */
+
+section.banner {
+    width: 100%;
+    height: 550px;
+    min-height: 550px;
+    max-height: 700px;
+    background-color: #000;
+    background-image: url('../images/bg.jpg');
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.text-banner {
+    padding: 100px;
+}
+
+.text-banner-single {
+    width: 300px;
+    height: 50px;
+    background-image: url('../images/box-text.png');
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 23px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.text-banner div:nth-of-type(2) {
+    max-width: 220px;
+    position: relative;
+    left: -13px;
+}
+
+.text-banner div:nth-of-type(3) {
+    max-width: 170px;
+    position: relative;
+    left: -22px;
+}
+
+.text-banner div:nth-of-type(4) {
+    background-image: url('../images/box-white-text.png');
+    background-size: 100% 100%;
+    color: #000;
+    width: 430px;
+    position: relative;
+    left: -36px;
+}
+
+/* Veículos em Destaque */
+
+section.veiculos-destaque {
+    padding: 90px 2%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    section.banner {
+        background-size: cover;
+        background-position: center;
+        height: 70vw;
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .text-banner {
+       padding: 60px 50px;
+    }
+
+    .text-banner-single {
+        font-size: 18px;
+    }
+
+    .text-banner div:nth-of-type(1) {
+        max-width: 240px;
+        position: relative;
+    }
+
+    .text-banner div:nth-of-type(2) {
+        max-width: 210px;
+        position: relative;
+        left: -10px;
+    }
+
+    .text-banner div:nth-of-type(3) {
+        max-width: 180px;
+        position: relative;
+        left: -19px;
+    }
+
+    .text-banner div:nth-of-type(4) {
+        background-image: url('../images/box-white-text.png');
+        background-size: 100% 100%;
+        color: #000;
+        width: 330px;
+        position: relative;
+        left: -31px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

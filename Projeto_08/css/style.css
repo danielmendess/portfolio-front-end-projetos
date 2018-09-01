@@ -119,6 +119,10 @@ nav.mobile ul li a {
     color: #000;
 }
 
+.header-border {
+    border-bottom: 3px solid #EB2D2D;
+}
+
 /* Banner */
 
 section.banner {
@@ -180,8 +184,16 @@ section.veiculos-destaque {
 
 }
 
-.vitrine-destaque .vitrine-img {
+.vitrine-img1 {
     background: url('../images/carro1.jpg');
+}
+
+.vitrine-img2 {
+    background: url('../images/carro2.jpg');
+}
+
+.vitrine-img3 {
+    background: url('../images/carro3.jpg');
 }
 
 section.veiculos-destaque .container {
@@ -199,7 +211,8 @@ section.veiculos-destaque .container {
 .vitrine-destaque .vitrine-img {
     width: 100%;
     padding-top: 100%;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     border: 8px solid #fff;
 }
 
@@ -324,12 +337,12 @@ section.servicos-descricao {
 /* Contato */
 
 section.contato {
-    padding: 80px 2%;
+    padding: 80px 2% 0 2%;
 }
 
 section.contato form {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 section.contato .input-wraper {
@@ -364,10 +377,269 @@ section.contato input[type=submit] {
     border: 0;
     cursor: pointer;
     border-bottom: 3px solid #B21E1E;
+    display: inline-block;
+}
+
+section.contato form .input-wraper:nth-of-type(5) {
+    text-align: center;
+    float: none;
+}
+
+/* Footer */
+
+footer {
+    padding: 40px 2%;
+    background: #252525;
+}
+
+footer nav {
+    float: left;
 }
 
 
+footer nav ul {
+    list-style-type: none;
+}
 
+footer nav ul li {
+    float: left;
+    font-style: italic;
+    padding: 0 30px;
+}
+
+footer nav ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+}
+
+footer p {
+    float: right;
+    color: #fff;
+    font-size: 19px;
+    font-style: italic;
+}
+
+
+/****************************/
+/* Página venda */
+/****************************/
+
+section.venda {
+    padding: 90px 0;
+}
+
+.venda-sidebar {
+    float: left;
+    width: 30%;
+    padding: 0 2%;
+}
+
+.content-venda {
+    margin-top: 40px;
+}
+
+.venda-search1 {
+    width: 90%;
+}
+
+.venda-search1 h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: normal;
+}
+
+.venda-search1 .barra-preco {
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.barra-preco-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.pointer-barra {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(30% - 13px);
+    top: -3px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.valor-pesquisa {
+    margin-top: 8px;
+}
+
+.valor-pesquisa p {
+    color: #000;
+    font-size: 15px;
+}
+
+.valor-pesquisa p:nth-of-type(1) {
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2) {
+    float: right;
+}
+
+.venda-search2 {
+    margin-top: 40px;
+}
+
+.venda-search2 h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: normal;
+}
+
+.form-venda-wraper {
+    margin-top: 10px;
+}
+
+.form-venda-wraper input {
+    display: none;
+}
+
+.form-venda-wraper label {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle {
+    display: block;
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #000;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    display: none;
+}
+
+.form-venda-wraper span {
+    vertical-align: top;
+    padding: 0 10px; 
+    font-size: 15px;
+}
+
+/* Vitrine Venda */
+
+.vitrine-venda {
+    float: left;
+    width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque {
+    margin-top: 20px;
+}
+
+.venda-img1 {
+    background: url('../images/carro4.jpg');
+}
+.venda-img2 {
+    background: url('../images/carro5.jpg');
+}
+.venda-img3 {
+    background: url('../images/carro6.jpg');
+}
+.venda-img4 {
+    background: url('../images/carro7.jpg');
+}
+.venda-img5 {
+    background: url('../images/carro8.jpg');
+}
+.venda-img6 {
+    background: url('../images/carro9.jpg');
+}
+
+
+/****************************/
+/* Página Induvidual Para Cada Veículo */
+/****************************/
+
+section.venda-single .container{
+    padding: 40px 0;
+}
+
+section.venda-single {
+    padding: 0 2%;
+}
+
+.info-veiculo {
+    float: left;
+    width: 60%;
+}
+
+.descricao-veiculo {
+    float: left;
+    width: 40%;
+    padding: 30px;
+}
+
+.foto-destaque {
+    width: 100%;
+    padding-top: 60%;
+    background: url('../images/carro10.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.descricao-veiculo p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 360px;
+}
+
+.nav-galeria-wraper div {
+    background: url('../images/carro11.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-galeria {
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.nav-galeria-wraper {
+    width: 200%;
+}
+
+.mini-img {
+    float: left;
+    width: calc(33.3% * (100 / 200));
+    padding-top: calc(33.3% * (100 / 200) * 0.4);
+    border: 7px solid #fff;
+}
 
 
 
@@ -389,6 +661,13 @@ section.contato input[type=submit] {
         margin-left: 0;
         margin-top: 15px;
     }
+
+    /* Vitrine Venda */
+
+    .vitrine-venda .vitrine-destaque {
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -422,6 +701,47 @@ section.contato input[type=submit] {
     .servicos-right {
         padding: 80px 5%;
         width: 100%;
+    }
+
+    /* Contato */
+
+    .w50 {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    footer nav {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
+    }
+
+    /* Vitrine Venda */
+
+    .vitrine-venda {
+        width: 100%;
+        text-align: center;
+    }
+
+    .venda-sidebar {
+        width: 100%;
+        text-align: center;
+    } 
+
+    .venda-search1 {
+        display: inline-block;
+    }
+
+    .venda-search2 {
+        display: inline-block;
+        text-align: left;
     }
 
 }
@@ -482,6 +802,10 @@ section.contato input[type=submit] {
 
     .vitrine-destaque a {
         display: inline-block;
+    }
+
+    .vitrine-venda .vitrine-destaque {
+        width: 80%;
     }
 
     

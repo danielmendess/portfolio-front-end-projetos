@@ -388,6 +388,7 @@ section.contato form .input-wraper:nth-of-type(5) {
 /* Footer */
 
 footer {
+    margin-top: 20px;
     padding: 40px 2%;
     background: #252525;
 }
@@ -580,26 +581,28 @@ section.venda {
 
 
 /****************************/
-/* Página Induvidual Para Cada Veículo */
+/* Página Individual Para Cada Veículo */
 /****************************/
 
 section.venda-single .container{
     padding: 40px 0;
+    text-align: center;
 }
 
 section.venda-single {
-    padding: 0 2%;
+    padding: 80px 2% 0 2%;
 }
 
 .info-veiculo {
-    float: left;
+    display: inline-block;
     width: 60%;
 }
 
 .descricao-veiculo {
-    float: left;
-    width: 40%;
-    padding: 30px;
+    display: inline-block; 
+    padding: 60px 30px;
+    vertical-align: top;
+    width: 38%;
 }
 
 .foto-destaque {
@@ -611,13 +614,19 @@ section.venda-single {
     background-repeat: no-repeat;
 }
 
-.descricao-veiculo p {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    max-width: 360px;
+.descricao-veiculo h2 {
+    text-align: left;
 }
 
-.nav-galeria-wraper div {
+.descricao-veiculo p {
+    max-width: 360px;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.mini-img {
     background: url('../images/carro11.jpg');
     background-size: cover;
     background-position: center;
@@ -625,9 +634,13 @@ section.venda-single {
 
 .nav-galeria {
     width: 100%;
-    padding: 15px;
     overflow: hidden;
-    margin-top: 15px;
+}
+
+.nav-galeria-parent {   
+    width: 100%;
+    padding: 36px;
+    position: relative;
 }
 
 .nav-galeria-wraper {
@@ -635,15 +648,113 @@ section.venda-single {
 }
 
 .mini-img {
+    width: 100%;
+    background: url('../images/carro11.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 70%;
+    cursor: pointer;
+}
+
+.mini-img-wraper {
     float: left;
     width: calc(33.3% * (100 / 200));
-    padding-top: calc(33.3% * (100 / 200) * 0.4);
-    border: 7px solid #fff;
+    padding: 9px;
+    
+}
+
+.arrow-left-nav {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../images/arrow-left.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;  
+    cursor: pointer;
+}
+
+.arrow-right-nav {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../images/arrow-right.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;  
+    cursor: pointer;
+}
+
+.info-bread {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.info-bread a {
+    text-decoration: none;
+    color: #000;
+}
+
+.info-bread span {
+    padding: 0 30px;
+}
+
+.info-bread a:last-child {
+    color: #B21E1E;
+    font-weight: bold;
 }
 
 
+/****************************/
+/* Página Sobre */
+/****************************/
 
+section.sobre {
+    padding: 60px 2% 20px 2%;
+}
 
+section.sobre .container {
+    margin-top: 30px;
+    max-width: 850px;
+}
+
+section.sobre .img-destaque-sobre {
+    width: 100%;
+    padding-top: 60%;
+    background: rgb(220, 220, 220);
+}
+
+section.sobre .descricao-autor {
+    margin-top: 20px;
+}
+
+.descricao-autor h2 {
+    font-size: 24px;
+}
+
+.descricao-autor p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.descricao-autor-perfil {
+    margin-top: 50px;
+}
+
+.img-small {
+    width: 20%;
+    padding-top: 20%;
+    background-color: rgb(220, 220, 220);
+    float: left;
+}
+
+.descricao-perfil-texto {
+    float: left;
+    width: 80%;
+    padding: 20px;
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -666,6 +777,28 @@ section.venda-single {
 
     .vitrine-venda .vitrine-destaque {
         width: 50%;
+    }
+
+    .info-veiculo {
+        width: 100%;
+    }
+
+    .descricao-veiculo {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .descricao-veiculo h2 {
+        text-align: center;
+    }
+
+    .descricao-veiculo a {
+        display: inline-block;
+    }
+
+    .descricao-veiculo p {
+        max-width: none;
+        text-align: center;
     }
 
 }
@@ -808,6 +941,21 @@ section.venda-single {
         width: 80%;
     }
 
+    /* Sobre */
+
+    .img-small {
+        width: 90%;
+        padding-top: 90%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .descricao-perfil-texto {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
     
 }
 

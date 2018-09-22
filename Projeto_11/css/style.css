@@ -1,13 +1,57 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto
+}
+
 .area {
     width: 120px;
     height: 100px;
-    border: 2px solid #000;
     float: left;
     text-align: center;
     padding-top: 15px;
 }
 
+.a1 {
+    border-bottom: 2px solid firebrick;
+    border-right: 2px solid firebrick;
+}
+
+.a2 {
+    border-bottom: 2px solid firebrick;
+   
+    border-right: 2px solid firebrick;
+}
+.a3 {
+    border-bottom: 2px solid firebrick;
+}
+
+.b1 {
+    border-bottom: 2px solid firebrick;
+    border-right: 2px solid firebrick;
+}
+
+.b2 {
+    border-bottom: 2px solid firebrick;
+    border-right: 2px solid firebrick;
+}
+
+.b3 {
+    border-bottom: 2px solid firebrick;
+}
+
+.c1 {
+    border-right: 2px solid firebrick;
+}
+
+.c2 {
+    border-right: 2px solid firebrick;
+}
+
+
 .placar {
     width: 252px;
     height: 80px;
+    color: firebrick;
+    font-size: 25px;
+    margin-bottom: 50px;
 }

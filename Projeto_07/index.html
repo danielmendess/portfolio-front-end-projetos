@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Clínica Fernanda Varella</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,18 +17,18 @@
             </div>
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">quem sou</a></li>
-                    <li><a href="#">depoimentos</a></li>
-                    <li><a href="#">sobre</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="#quemSou">quem sou</a></li>
+                    <li><a href="#videos">videos</a></li>
+                    <li><a href="#depoimentos">depoimentos</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav>
             <nav class="menu-mobile">
                 <ul>
-                    <li><a href="#">quem sou</a></li>
-                    <li><a href="#">depoimentos</a></li>
-                    <li><a href="#">sobre</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="#quemSou">quem sou</a></li>
+                    <li><a href="#videos">videos</a></li>
+                    <li><a href="#depoimentos">depoimentos</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <section class="perfil">
+    <section class="perfil" id="quemSou">
         <div class="container">
             <div class="perfil-wraper">
                 <div class="perfil-wraper2">
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-    <section class="videos">
+    <section class="videos" id="videos">
         <div class="container">
             <div class="box-video">
                 <iframe src="https://www.youtube.com/embed/-m6NK5eoqE8" frameborder="0" allow="autoplay; encrypted-media"
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
         <h2>Depoimentos</h2>
         <div class="container">
             <div class="depoimento-single">
@@ -228,7 +228,7 @@
         <div class="clear"></div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <h2>Contato</h2>
         <div class="container">
             <form>
@@ -276,6 +276,9 @@
             <div class="clear"></div>
         </div>
     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

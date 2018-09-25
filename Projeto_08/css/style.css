@@ -65,6 +65,7 @@ header nav.desktop {
     float: right;
     position: relative;
     top: 40px;
+    margin-right: 50px;
 }
 
 header nav.desktop ul {
@@ -105,16 +106,19 @@ nav.mobile ul {
     top: 110px;
     z-index: 10;
     display: none;
+    border-bottom: 3px solid #EB2D2D;
+    padding: 30px 0;
 }
 
 nav.mobile li {
     font-size: 18px;
-    padding: 20px 0;
     font-style: italic;
     text-transform: uppercase;
 }
 
 nav.mobile ul li a {
+    padding: 35px 0;
+    display: block;
     text-decoration: none;
     color: #000;
 }
@@ -464,7 +468,7 @@ section.venda {
     position: absolute;
     left: 0;
     top: 0;
-    width: 30%;
+    width: 0;
     height: 20px;
     border-radius: 20px;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
@@ -475,7 +479,7 @@ section.venda {
     height: 26px;
     border-radius: 8px;
     position: absolute;
-    left: calc(30% - 13px);
+    left: 0;
     top: -3px;
     border-radius: 8px;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));

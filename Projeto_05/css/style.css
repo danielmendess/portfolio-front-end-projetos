@@ -70,18 +70,20 @@ header nav.mobile-menu {
 header nav.mobile-menu ul {
     position: absolute;
     top: 85px;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 70%;
+    height: 100vh;
     list-style-type: none;
     background-color: #fff;
     text-align: center;
-    
+    display: none;
+    z-index: 10;
+    padding: 20px 0;
 }
 
 header nav.mobile-menu ul li {
-    border-bottom: 1px solid #000;
-    padding: 8px 0;
     transition: .4s;
+    font-size: 22px;
 }
 
 header nav.mobile-menu ul li:hover {
@@ -89,8 +91,10 @@ header nav.mobile-menu ul li:hover {
 }
 
 header nav.mobile-menu ul li a {
+    padding: 30px 0;
     text-decoration: none;
     color: #000;
+    display: block;
 }
 
 header .logo {

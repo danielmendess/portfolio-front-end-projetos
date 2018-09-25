@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Montserrat',
-    sans-serif;
+    /* font-family:'Montserrat',
+    sans-serif; */
 }
 
 .clear {
@@ -44,17 +44,23 @@ header nav.menu-mobile {
 header nav.menu-mobile ul {
     background-color: #fff;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     text-align: center;
     width: 100%;
     z-index: 10;
     display: none;
+    border-bottom: 3px solid #688293;
 }
 
 header nav.menu-mobile ul li {
-    padding: 10px;
     text-transform: uppercase;
+}
+
+header nav.menu-mobile ul li a {
+    padding: 20px 0;
+    text-transform: uppercase;
+    display: block;
 }
 
 header nav.menu-desktop {

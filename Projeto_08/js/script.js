@@ -48,23 +48,24 @@ $(function() {
         
         }
 
-        function disableTextSelection() {
-            $('body').css('-webkit-user-select', 'none');
-            $('body').css('-moz-user-select', 'none');
-            $('body').css('-ms-user-select', 'none');
-            $('body').css('-o-user-select', 'none');
-            $('body').css('user-select', 'none');
-        }
-
-        function enableTextSelecttion() {
-            $('body').css('-webkit-user-select', 'auto');
-            $('body').css('-moz-user-select', 'auto');
-            $('body').css('-ms-user-select', 'auto');
-            $('body').css('-o-user-select', 'auto');
-            $('body').css('user-select', 'auto');
-        }
-
+        
     });
+    
+    function disableTextSelection() {
+        $('body').css('-webkit-user-select', 'none');
+        $('body').css('-moz-user-select', 'none');
+        $('body').css('-ms-user-select', 'none');
+        $('body').css('-o-user-select', 'none');
+        $('body').css('user-select', 'none');
+    }
+
+    function enableTextSelecttion() {
+        $('body').css('-webkit-user-select', 'auto');
+        $('body').css('-moz-user-select', 'auto');
+        $('body').css('-ms-user-select', 'auto');
+        $('body').css('-o-user-select', 'auto');
+        $('body').css('user-select', 'auto');
+    }
 
     //formatar o preço de veículo da página venda.html
 
@@ -89,10 +90,72 @@ $(function() {
             return preco_arr[0][0] + preco_arr[0][1] + "." + preco_arr[0].substr(2, preco_arr[0].length) + "," + preco_arr[1];
         }
 
-
     }
 
 
+    // Sistema de slide
+
+    var imgShow = 3;
+    var maxIndex = Math.ceil($('.mini-img-wraper').length / 3) - 1;
+    var curIndex = 0;
+
+    initSlider();
+    navigateSlider();
+    clickSlider();
+
+    function initSlider() {
+
+        var amt = $('.mini-img-wraper').length * 33.3;
+        var elScroll = $('.nav-galeria-wraper');
+        var elSingle = $('.mini-img-wraper');
+
+        elScroll.css('width', amt + '%');
+        elSingle.css('width', 33.3 * (100 / amt) + '%');
+
+    }
+
+    function navigateSlider() {
+
+        $('.arrow-right-nav').on('click', function () {
+
+            if (curIndex < maxIndex) {
+                curIndex++;
+                var elOff = $('.mini-img-wraper').eq(curIndex * 3).offset().left - $('.nav-galeria-wraper').offset().left;
+                $('.nav-galeria').animate({
+                    'scrollLeft': elOff + 'px'
+                });
+            }
+
+        });
+        $('.arrow-left-nav').on('click', function () {
+
+            if (curIndex > 0) {
+                curIndex--;
+                var ellOff = $('.mini-img-wraper').eq(curIndex * 3).offset().left - $('.nav-galeria-wraper').offset().left;
+                $('.nav-galeria').animate({
+                    'scrollLeft': ellOff + 'px'
+                });
+            }
+
+        });
+
+    }
+
+    function clickSlider() {
+
+        $('.mini-img-wraper').on('click', function () {
+
+            $('.mini-img-wraper').css('background-color', 'transparent');
+            $(this).css('background-color', 'rgb(210, 210, 210)');
+
+            var img = $(this).children().css('background-image');
+            $('.foto-destaque').css('background-image', img);
+
+        });
+
+        $('.mini-img-wraper').eq(0).click();
+
+    }    
     
 
 });

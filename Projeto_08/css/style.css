@@ -317,6 +317,7 @@ section.servicos-descricao {
 
 .depoimento-single p {
     font-size: 20px;
+    height: 100px;
 }
 
 .navigation {
@@ -332,11 +333,6 @@ section.servicos-descricao {
     float: left;
 }
 
-.nome-depoimento {
-    float: right;
-    color: #252525;
-    font-size: 20px;
-}
 
 /* Contato */
 
@@ -612,7 +608,6 @@ section.venda-single {
 .foto-destaque {
     width: 100%;
     padding-top: 60%;
-    background: url('../images/carro10.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -630,12 +625,6 @@ section.venda-single {
     text-align: left;
 }
 
-.mini-img {
-    background: url('../images/carro11.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 .nav-galeria {
     width: 100%;
     overflow: hidden;
@@ -647,13 +636,8 @@ section.venda-single {
     position: relative;
 }
 
-.nav-galeria-wraper {
-    width: 200%;
-}
-
 .mini-img {
     width: 100%;
-    background: url('../images/carro11.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 70%;
@@ -662,7 +646,6 @@ section.venda-single {
 
 .mini-img-wraper {
     float: left;
-    width: calc(33.3% * (100 / 200));
     padding: 9px;
     
 }

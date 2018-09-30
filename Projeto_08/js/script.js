@@ -156,6 +156,18 @@ $(function() {
         $('.mini-img-wraper').eq(0).click();
 
     }    
+
+    // scroll dinamico da section#contato
+
+    $('[target=contato]').on('click', function() {
+
+        $('html, body').animate({
+            'scrollTop': $('#contato').offset().top 
+        });
+
+        return false;
+
+    });;
     
 
 });

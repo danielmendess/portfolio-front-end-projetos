@@ -168,6 +168,46 @@ $(function() {
         return false;
 
     });;
+
+    // sistema de navegação nos depoimentos da index.html
+
+    var amtDepoimento = $('.depoimento-single p').length;
+    var curIndexDepoimentos = 0;
+
+    iniciarDepoimentos();
+    navegarDepoimentos();
+
+    function iniciarDepoimentos() {
+        $('.depoimento-single p').hide();
+        $('.depoimento-single p').eq(0).show();
+    }
+
+    function navegarDepoimentos() {
+        $('.next').on('click', function () {
+
+            curIndexDepoimentos++;
+            if (curIndexDepoimentos >= amtDepoimento) {
+                curIndexDepoimentos = 0;
+            }
+
+            $('.depoimento-single p').hide();
+            $('.depoimento-single p').eq(curIndexDepoimentos).show();
+
+        });
+
+        $('.prev').on('click', function () {
+
+            curIndexDepoimentos--;
+            if (curIndexDepoimentos < 0) {
+                curIndexDepoimentos = amtDepoimento - 1;
+            }
+
+            $('.depoimento-single p').hide();
+            $('.depoimento-single p').eq(curIndexDepoimentos).show();
+
+        });
+    }
+
     
 
 });
